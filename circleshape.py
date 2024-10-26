@@ -23,3 +23,4 @@ class CircleShape(pygame.sprite.Sprite):
     def col_check(self,other):
         return self.position.distance_to(other.position) 
             
+

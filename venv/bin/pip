@@ -1,4 +1,4 @@
-#!/home/jan/Desktop/File/workspace/Asteroid_game/venv/bin/python3
+#!/home/jan/Desktop/File/workspace/Asteroid_game/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

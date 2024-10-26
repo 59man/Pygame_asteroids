@@ -2,13 +2,17 @@ import pygame
 from constants import *
 from circleshape import CircleShape
 import random
+image_path = 'circle.png'
 
 class Asteroid(CircleShape):
     def __init__(self,x,y,radius):
         super().__init__(x,y,radius)
-
+        #self.circle_image = pygame.image.load(image_path).convert_alpha()
     def draw(self, screen):
-        pygame.draw.circle(screen,'white',self.position,self.radius,2)
+        #scaled = pygame.transform.scale(self.circle_image,(self.radius,self.radius))
+        #centrum = scaled.get_rect(center=(self.position.x,self.position.y))
+        #screen.blit(scaled, centrum.topleft)
+        pygame.draw.circle(screen,'red',self.position,self.radius,0)
     #def move(self,dt):
         #forward = pygame.Vector2(0, 1).rotate(self.rotation)
         #self.position += forward * PLAYER_SPEED * dt
